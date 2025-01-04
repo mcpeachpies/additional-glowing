@@ -3,4 +3,4 @@ execute if score mpp_glow_setup mpp_datapacks matches 1.. run tellraw @a[gamemod
 
 #Setup Check
 scoreboard objectives add mpp_datapacks dummy {"text":"mcpeachpies Datapacks","color":"blue"}
-execute unless score mpp_glow_setup mpp_datapacks matches 1.. run function mcpeachpies_additional_glowing:setup
+execute unless score mpp_glow_setup mpp_datapacks matches 1.. run function mcpeachpies:additional_glowing/setup

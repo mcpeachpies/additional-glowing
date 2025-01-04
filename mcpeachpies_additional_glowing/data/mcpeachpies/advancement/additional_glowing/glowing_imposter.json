@@ -1,13 +1,12 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:phantom_membrane"
+      "id": "minecraft:ink_sac"
     },
-    "title": "Neon Nights",
-    "description": "Light up the skies with a glowing Phantom",
-    "frame": "goal"
+    "title": "Glowing Imposter",
+    "description": "Make a Squid glow using a spectral arrow"
   },
-  "parent": "mcpeachpies:additional_glowing/thats_them_officer",
+  "parent": "mcpeachpies:additional_glowing/glow_up",
   "criteria": {
     "crossbow": {
       "trigger": "minecraft:player_hurt_entity",
@@ -21,7 +20,6 @@
         ],
         "damage": {
           "type": {
-            "is_projectile": true,
             "direct_entity": {
               "type": "minecraft:spectral_arrow"
             }
@@ -32,7 +30,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:phantom"
+              "type": "minecraft:squid"
             }
           }
         ]

@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:glow_ink_sac"
+      "id": "minecraft:player_head"
     },
-    "title": "Glow Up",
-    "description": "Make a Glow Squid glow using a spectral arrow"
+    "title": "Tag, You're it!",
+    "description": "Tag another player by shooting them with a spectral arrow"
   },
   "parent": "mcpeachpies:additional_glowing/enemy_spotted",
   "criteria": {
@@ -20,7 +20,6 @@
         ],
         "damage": {
           "type": {
-            "is_projectile": true,
             "direct_entity": {
               "type": "minecraft:spectral_arrow"
             }
@@ -31,7 +30,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:glow_squid"
+              "type": "minecraft:player"
             }
           }
         ]

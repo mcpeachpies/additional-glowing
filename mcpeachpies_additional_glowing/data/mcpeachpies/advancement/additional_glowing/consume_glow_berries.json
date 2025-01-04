@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:stone"
+      "id": "minecraft:stone"
     },
     "title": "",
     "description": "",
@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "mcpeachpies_additional_glowing:consume_glow_berries"
+    "function": "mcpeachpies:additional_glowing/consume_glow_berries"
   }
 }

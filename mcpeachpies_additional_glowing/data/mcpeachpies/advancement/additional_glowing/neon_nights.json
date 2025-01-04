@@ -1,12 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "spectral_arrow"
+      "id": "minecraft:phantom_membrane"
     },
-    "title": "Enemy Spotted",
-    "description": "Shoot an entity and highlight it with a spectral arrow"
+    "title": "Neon Nights",
+    "description": "Light up the skies with a glowing Phantom",
+    "frame": "goal"
   },
-  "parent": "mcpeachpies:additional_glowing/blinding_lights",
+  "parent": "mcpeachpies:additional_glowing/thats_them_officer",
   "criteria": {
     "crossbow": {
       "trigger": "minecraft:player_hurt_entity",
@@ -20,12 +21,20 @@
         ],
         "damage": {
           "type": {
-            "is_projectile": true,
             "direct_entity": {
               "type": "minecraft:spectral_arrow"
             }
           }
-        }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:phantom"
+            }
+          }
+        ]
       }
     }
   }
