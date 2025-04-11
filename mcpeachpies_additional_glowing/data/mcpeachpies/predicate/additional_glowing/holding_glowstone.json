@@ -2,11 +2,14 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
+    "type_specific": {
+      "type": "minecraft:player"
+    },
     "equipment": {
       "mainhand": {
         "items": [
-          "minecraft:glowstone_dust",
-          "minecraft:glowstone"
+          "minecraft:glowstone",
+          "minecraft:glowstone_dust"
         ]
       }
     }
